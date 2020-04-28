@@ -84,10 +84,10 @@ app.get('/about', (req, res) => {
         title: 'About',
         me: {
             name: 'Marcos Lucas' ,
-            descricao: 'A young guy who makes success with gatinhas'
+            descricao: 'A young guy who wants to make great stuffs and create many things as possible'
         },
         idade: 22,
-        skills: ['Javascript', 'Python', 'Node.js', 'Express', 'Java']
+        skills: ['Javascript', ' Python', ' Node.js', ' Express', ' Java']
     })
 })
 
