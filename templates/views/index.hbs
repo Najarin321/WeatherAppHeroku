@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather!</p>
+        <form method="GET" action="/weather">
+        <input type="text" placeholder="Location" name="address">
+        <input type="submit" value="Search">
+    </form>
+
+    <p id="message-1"></p>
+    <p id="message-2"></p>
+
+    </div>
+
+    
+</body>
+<footer>
+    {{>footer}}
+    <script src="./js/app.js"></script>
+
+</footer>
+</html>
