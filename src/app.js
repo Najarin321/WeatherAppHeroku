@@ -58,7 +58,9 @@ app.get('/weather', (req, res) => {
             res.send({
                 address: forecastData.local,
                 forecast: forecastData.temperatura,
-                chanceChuva: forecastData.chanceChuva
+                chanceChuva: forecastData.chanceChuva,
+                tempDesc: forecastData.climaDesc,
+                isDay: forecastData.isDay
             })
         })
     })

@@ -2,6 +2,7 @@ console.log('Im a client-side file in a js directory')
 
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
+const messageThree = document.querySelector('#message-3')
 
 // messageOne.textContent = 'From JavaScript'
 
@@ -22,5 +23,7 @@ weatherForm.addEventListener('submit', (event) => {
     }    
     else{
         messageTwo.textContent = `Em ${data.address} fazem ${data.forecast} graus`
+        messageOne.textContent = `Chance de Chuva: ${data.chanceChuva}%`
+        messageThree.textContent = `It's a ${String(data.tempDesc).toLowerCase()} ${data.isDay}`
     }}))
 })

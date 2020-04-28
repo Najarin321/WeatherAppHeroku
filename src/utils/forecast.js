@@ -7,7 +7,9 @@ const getTemp = (lat, long, callback) => {
         callback({
             temperatura: response.data.current.temperature,
             chanceChuva: response.data.current.precip * 100,
-            local: `${response.data.location.region}, ${response.data.location.country}`
+            local: `${response.data.location.region}, ${response.data.location.country}`,
+            climaDesc: response.data.current.weather_descriptions[0],
+            isDay: response.data.current.is_day === "yes" ? "day" : "night"
         })
     }).catch(error => callback({error : error.message}))
 }
